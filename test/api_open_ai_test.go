@@ -11,10 +11,11 @@ package openapi
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/Zhima-Mochi/openai-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_openapi_OpenAIApiService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CancelFineTune", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var fineTuneId string
 
@@ -38,7 +39,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateAnswer", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateAnswer(context.Background()).Execute()
 
@@ -50,7 +51,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateChatCompletion", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateChatCompletion(context.Background()).Execute()
 
@@ -62,7 +63,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateClassification", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateClassification(context.Background()).Execute()
 
@@ -74,7 +75,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateCompletion", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateCompletion(context.Background()).Execute()
 
@@ -86,7 +87,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateEdit", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateEdit(context.Background()).Execute()
 
@@ -98,7 +99,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateEmbedding", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateEmbedding(context.Background()).Execute()
 
@@ -110,7 +111,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateFile", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateFile(context.Background()).Execute()
 
@@ -122,7 +123,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateFineTune", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateFineTune(context.Background()).Execute()
 
@@ -134,7 +135,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateImage", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateImage(context.Background()).Execute()
 
@@ -146,7 +147,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateImageEdit", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateImageEdit(context.Background()).Execute()
 
@@ -158,7 +159,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateImageVariation", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateImageVariation(context.Background()).Execute()
 
@@ -170,7 +171,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateModeration", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateModeration(context.Background()).Execute()
 
@@ -182,7 +183,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateSearch", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var engineId string
 
@@ -196,7 +197,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateTranscription", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateTranscription(context.Background()).Execute()
 
@@ -208,7 +209,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService CreateTranslation", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.CreateTranslation(context.Background()).Execute()
 
@@ -220,7 +221,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService DeleteFile", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var fileId string
 
@@ -234,7 +235,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService DeleteModel", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var model string
 
@@ -248,7 +249,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService DownloadFile", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var fileId string
 
@@ -262,7 +263,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService ListEngines", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.ListEngines(context.Background()).Execute()
 
@@ -274,7 +275,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService ListFiles", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.ListFiles(context.Background()).Execute()
 
@@ -286,7 +287,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService ListFineTuneEvents", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var fineTuneId string
 
@@ -300,7 +301,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService ListFineTunes", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.ListFineTunes(context.Background()).Execute()
 
@@ -312,7 +313,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService ListModels", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OpenAIApi.ListModels(context.Background()).Execute()
 
@@ -324,7 +325,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService RetrieveEngine", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var engineId string
 
@@ -338,7 +339,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService RetrieveFile", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var fileId string
 
@@ -352,7 +353,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService RetrieveFineTune", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var fineTuneId string
 
@@ -366,7 +367,7 @@ func Test_openapi_OpenAIApiService(t *testing.T) {
 
 	t.Run("Test OpenAIApiService RetrieveModel", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var model string
 
